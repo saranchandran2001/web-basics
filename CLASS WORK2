@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<title>Page Title</title>
+</head>
+<table border="1">
+	<tr style="background-color:#ADD8E6">
+		<th>Sr.Number</th>
+		<th>Date</th>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Email</th>
+		<th>Country</th>
+		<th>Link</th>
+	</tr>
+		
+	<tr style="background-color:#FFFFFF">
+		<td>1</td>
+		<td>11.03.2025</td>
+		<td>Rahul</td>
+		<td>Sharma</td>
+		<td>rahul@gmail.com</td>
+		<td>Germany</td>
+		<td><a href="https://en.wikipedia.org/wiki/Germany">Germany</a></td>
+	</tr>
+	<tr style="background-color:#ADD8E6">
+		<td>2</td>
+		<td>11.03.2025</td>
+		<td>Sneha</td>
+		<td>Patel</td>
+		<td>sneha@gmail.com</td>
+		<td>France</td>
+		<td><a href="https://en.wikipedia.org/wiki/France">France</a></td>
+	</tr>
+	<tr style="background-color:#FFFFFF">
+		<td>3</td>
+		<td>11.03.2025</td>
+		<td>Aryan</td>
+		<td>Verma</td>
+		<td>aryan@gmail.com</td>
+		<td>Italy</td>
+		<td><a href="https://en.wikipedia.org/wiki/Italy">Italy</a></td>
+	</tr>
+	<tr style="background-color:#ADD8E6">
+		<td>4</td>
+		<td>11.03.2025</td>
+		<td>Neha</td>
+		<td>Kumar</td>
+		<td>neha@gmail.com</td>
+		<td>Netherlands</td>
+		<td><a href="https://en.wikipedia.org/wiki/Netherlands">Netherlands</a></td>
+	</tr>
+</table>
+</body>
+</html>
