@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exact Styled Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    form {
+      width: 400px;
+      padding: 20px;
+      border: 3px solid orange;
+      border-top: 6px solid orange;
+      box-sizing: border-box;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      background-color: #3b6fb6;
+      color: white;
+      border: none;
+      padding: 12px;
+      margin-bottom: 10px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    ::placeholder {
+      color: white;
+    }
+
+    label {
+      display: none; /* hidden to match screenshot */
+    }
+
+    .gender-group {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .gender-group label {
+      display: flex;
+      align-items: center;
+      background-color: #3b6fb6;
+      padding: 10px;
+      color: black;
+      font-weight: normal;
+    }
+
+    textarea {
+      height: 80px;
+    }
+
+    select {
+      appearance: auto;
+      -webkit-appearance: auto;
+      -moz-appearance: auto;
+    }
+
+    input[type="submit"],
+    input[type="reset"],
+    button {
+      background-color: #3b6fb6;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      margin: 10px 10px 0 0;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button.cancel {
+      background-color: #3b6fb6;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <input type="text" name="firstname" placeholder="First name" required>
+    <input type="text" name="lastname" placeholder="Last name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="date" name="date" required>
+
+    <select name="city" required>
+      <option value="">Select city</option>
+      <option>New York</option>
+      <option>London</option>
+      <option>Delhi</option>
+    </select>
+
+    <div class="gender-group">
+      <label><input type="radio" name="gender" value="male" required> Male</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+      <label><input type="radio" name="gender" value="others"> Others</label>
+    </div>
+
+    <textarea name="address" placeholder="Address" required></textarea>
+
+    <select name="country" required>
+      <option value="">Select Country</option>
+      <option>USA</option>
+      <option>India</option>
+      <option>UK</option>
+    </select>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    <button type="button" class="cancel" onclick="alert('Cancelled')">Cancel</button>
+  </form>
+
+</body>
+</html>
